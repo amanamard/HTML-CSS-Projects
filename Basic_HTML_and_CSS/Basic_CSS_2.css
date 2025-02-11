@@ -1,0 +1,26 @@
+h3, h6 {
+	color: white;
+	background-color: blue;
+	font-size: medium;
+	text-align: center;
+}
+
+/* Table style */
+table {
+	border: 1px solid black;
+}
+
+tr, th {
+	background-color: black;
+	color: cornsilk;
+}
+
+tr, td {
+	background-color: purple;
+	color: white;
+}
+
+/* Text-shadow property */ 
+h4 {
+	text-shadow: 5px 5px 10px blue;
+}

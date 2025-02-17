@@ -1,0 +1,131 @@
+body {
+    background-color: #fff;
+}
+
+#home {
+    color: rgba(8, 141, 165, 1);
+    text-align: center;
+    text-shadow: 1px .5px 4px rgba(0, 0, 0, 0.6);
+}
+
+.container {
+    width: auto;
+    height: 135px;
+    background-color: #faebd7;
+    border: 2px none black;
+}
+
+/* SELECT ALL PHOTO-CONTAINER IN CONTAINER */
+.container .photo-container:nth-child(-n+9) {
+    color: #fff;
+    float: left;
+    width: 155px;
+    height: 120px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 25%;
+    cursor: pointer;
+   
+    transition: transform .5s ease-in-out;
+    
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* SELECT ALL PHOTO-CONTAINER DESCRIPTION IN THE CONTAINER */
+.photo-container:nth-child(-n+9) .description {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.862);
+}
+
+/* INDIVIDUALLY SELECT A PHOTO-CONTAINER IN THE CONTAINER */
+.container .photo-container:nth-child(1) {
+    background-image: url(../Images/Thumb/thumbnail_1.png);
+}
+
+.container .photo-container:nth-child(2) {
+    background-image: url(../Images/Thumb/thumbnail_2.png);
+}
+
+.container .photo-container:nth-child(3) {
+    background-image: url(../Images/Thumb/thumbnail_3.png);
+}
+
+.container .photo-container:nth-child(4) {
+    background-image: url(../Images/Thumb/thumbnail_4.png);
+}
+
+.container .photo-container:nth-child(5) {
+    background-image: url(../Images/Thumb/thumbnail_5.png);
+}
+
+.container .photo-container:nth-child(6) {
+    background-image: url(../Images/Thumb/thumbnail_6.png);
+}
+
+.container .photo-container:nth-child(7) {
+    background-image: url(../Images/Thumb/thumbnail_7.png);
+}
+
+.container .photo-container:nth-child(8) {
+    background-image: url(../Images/Thumb/thumbnail_8.png);
+}
+
+.container .photo-container:nth-child(9) {
+    background-image: url(../Images/Thumb/thumbnail_9.png);
+}
+
+/* HOVER & ANIMATION */
+.photo-container:nth-child(-n+9) .description:hover {
+    visibility: hidden;
+}
+
+.container .photo-container:nth-child(-n+9):hover {
+    transform: scale(1.2);
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
+}
+
+.container .photo-container:nth-child(1):hover {
+    background-image: url(../Images/Thumb/thumbnail_1.png);
+}
+
+.container .photo-container:nth-child(2):hover {
+    background-image: url(../Images/Thumb/thumbnail_2.png);
+}
+
+.container .photo-container:nth-child(3):hover {
+    background-image: url(../Images/Thumb/thumbnail_3.png);
+}
+
+.container .photo-container:nth-child(4):hover {
+    background-image: url(../Images/Thumb/thumbnail_4.png);
+}
+
+.container .photo-container:nth-child(5):hover {
+    background-image: url(../Images/Thumb/thumbnail_5.png);
+}
+
+.container .photo-container:nth-child(6):hover {
+    background-image: url(../Images/Thumb/thumbnail_6.png);
+}
+
+.container .photo-container:nth-child(7):hover {
+    background-image: url(../Images/Thumb/thumbnail_7.png);
+}
+
+.container .photo-container:nth-child(8):hover {
+    background-image: url(../Images/Thumb/thumbnail_8.png);
+}
+
+.container .photo-container:nth-child(9):hover {
+    background-image: url(../Images/Thumb/thumbnail_9.png);
+}
+

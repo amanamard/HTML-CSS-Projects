@@ -11,7 +11,7 @@ body {
 .container {
     width: auto;
     height: 135px;
-    background-color: #faebd7;
+    background-color: #184352;
     border: 2px none black;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 /* SELECT ALL PHOTO-CONTAINER DESCRIPTION IN THE CONTAINER */
-.photo-container:nth-child(-n+9) .description {
+.description {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
     font-weight: 300;
@@ -42,6 +42,8 @@ body {
     margin: 0;
     color: #fff;
     text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.862);
+    opacity: 1;
+    visibility: visible;
 }
 
 /* INDIVIDUALLY SELECT A PHOTO-CONTAINER IN THE CONTAINER */
@@ -82,11 +84,12 @@ body {
 }
 
 /* HOVER & ANIMATION */
-.photo-container:nth-child(-n+9) .description:hover {
+.photo-container:nth-child(-n+9):hover .description {
     visibility: hidden;
+    opacity: 0;
 }
 
-.container .photo-container:nth-child(-n+9):hover {
+.photo-container:nth-child(-n+9):hover {
     transform: scale(1.2);
     animation-duration: 2.5s;
     animation-iteration-count: infinite;

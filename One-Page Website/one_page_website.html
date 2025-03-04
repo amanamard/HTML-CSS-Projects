@@ -10,85 +10,94 @@
 		<header>
 			
 			<!-- LOGO -->
-			<div>
+			<div class="header-logo">
 				<img id="logo" src="./Images/logo.png" alt="logo Cameroon"/>
 			</div>
 			<!-- END LOGO -->
 				
 			<nav>
 				<ul>
-					<a href="#home" id="link"><li>HOME</li></a>
-					<a href="#gallery"><li>GALLERY</li></a>
-					<a href="#contact"><li>CONTACT</li></a>
+					<li><a href="#home" id="link">HOME</a></li>
+					<li><a href="#gallery">GALLERY</a></li>
+					<li><a href="#contact">CONTACT</a></li>
 				</ul>
 			</nav>
 		</header>
-		
+
+		<br>
+		<br>
+		<br>
+
 		<main>
 			
 			<!-- HOME -->
-			<section id="home">
+			<div class="home-text" id="home">
 				<h1>Welcome to Cameroon!</h1>
-				<p>
+				<p class="center">
 				Explore the heart of Africa, where stunning landscapes, vibrant cultures, and rich wildlife await.<br>
 				From the beaches of Kribi to Mount Cameroon’s peak, adventure and tradition come together for an unforgettable experience.
 				</p>
-			</section>
+			</div>
 			<!-- END HOME -->
 			
 			<!-- GALLERY -->
-			<section id="gallery">
-				<div>
-					<h2>Top Destinations in Cameroon</h2>
-					
+			<section class="gallery-section" id="gallery">
+				<h1>Top Destinations in Cameroon</h1>
+				<div class="gallery-section1">
+										
 					<!-- PHOTO-CONTAINER 1 -->
-					<div>
-						<div>
-							<img src="./Images/Thumb/thumbnail_1.png" alt="Image of Kribi beach">
+					<div class="card">
+						<img src="./Images/Thumb/thumbnail_1.png" alt="Image of Kribi beach" class="card-image">
+						<div class="card-description">
+							<h4><b>Kribi Beach</b></h4> 
+							<p>Relax on white sand beaches and visit Lobé waterfalls</P>
 						</div>
-						<p>Kribi Beach - Relax on white sand beaches and visit Lobé waterfalls</P>
 					</div>
 					<!-- END PHOTO-CONTAINER 1 -->
 					
 					<!-- PHOTO-CONTAINER 2 -->
-					<div>
-						<div>
-							<img src="./Images/Thumb/thumbnail_2.png" alt="Image of Mount Cameroon">
+					<div class="card">
+						<img src="./Images/Thumb/thumbnail_2.png" alt="Image of Mount Cameroon" class="card-image">
+						<div class="card-description">
+							<h4><b>Mount Cameroon</b></h4> 
+							<p>Highest peak in Central Africa, perfect for hiking</P>
 						</div>
-						<p>Mount Cameroon - Highest peak in Central Africa, perfect for hiking</P>
 					</div>
 					<!-- END PHOTO-CONTAINER 2 -->
 					
 					<!-- PHOTO-CONTAINER 3 -->
-					<div>
-						<div>
-							<img src="./Images/Thumb/thumbnail_3.png" alt="Image of Waza National Park">
+					<div class="card">
+						<img src="./Images/Thumb/thumbnail_3.png" alt="Image of Waza National Park" class="card-image">
+						<div class="card-description">
+							<h4><b>Waza National Park</b></h4> 
+							<p>Safari with elephants, lions, giraffes, and more.</P>
 						</div>
-						<p>Waza National Park - Safari with elephants, lions, and giraffes</P>
 					</div>
 					<!-- END PHOTO-CONTAINER 3 -->
 					
 					<!-- PHOTO-CONTAINER 4 -->
-					<div>
-						<div>
-							<img src="./Images/Thumb/thumbnail_4.png" alt="Image of Limbe">
+					<div class="card">
+						<img src="./Images/Thumb/thumbnail_4.png" alt="Image of Limbe" class="card-image">
+						<div class="card-description">
+							<h4><b>Limbe</b></h4> 
+							<p>Discover black sand beaches and botanical gardens</P>
 						</div>
-						<p>Limbe - Discover black sand beaches and botanical gardens</P>
 					</div>
 					<!-- END PHOTO-CONTAINER 4 -->
 				
 				</div>
 					
-				<div>	
+				<div class="gallery-section2">	
 					<div>
-						<h2>Culture and Traditions</h2>
-						<p>Cameroon has many ethnic groups, each with unique music, dances, and festivals. Popular foods include Ndolé and Achu.</p>
+						<h1>Culture and Traditions</h1>
+						<p class="center video">Cameroon has many ethnic groups, each with unique music, dances, and festivals. Popular foods include Ndolé and Achu.</p>
 					</div>
 					
 					<!-- VIDEO -->
-					<div>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/b51J1DqO1UE?si=O72Jq0jBT9wzXZ3t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-					</div>
+					<video autoplay muted loop id="cameroonimage-video">
+						<source src="./Images/Videos/cameroonimage.mp4" type="video/mp4">
+					  	Your browser does not support the video tag.
+					</video>
 					<!-- END VIDEO -->
 					
 				</div>
@@ -96,13 +105,13 @@
 			<!-- END GALLERY -->
 			
 			<!-- CONTACT -->
-			<section id="contact">
+			<section>
 				<div class="container">
-					<h2>CONTACT</h2>
+					<h1 id="contact">Contact</h1>
 					<div class="info">
-						<h3><span>Experience the magic of Cameroon!</span>
+						<h2><span>Experience the magic of Cameroon!</span>
 							<br>Contact us today!
-						</h3>
+						</h2>
 						
 						<div>
 							<form action="" method="post">

@@ -1,7 +1,8 @@
+/* Genaral styling */
 * {
     box-sizing: border-box;
 }
-/* Setting properties for the text in the page */
+
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -21,6 +22,11 @@ h1 {
     text-align: center;
 }
 
+footer {
+    padding: 2%;
+    color: red;
+}
+
 /* Header section */
 header {
     display: flex;
@@ -31,8 +37,6 @@ header {
     z-index: 2;
     width: 100%;
     background-color: white;
-    /*border: 1px solid black;
-    opacity: 0.5;*/
 }
 
 /* Navbar */
@@ -157,25 +161,68 @@ main {
 }
 /* End Gallery section 2 */
 
-/* Setting properties for the inputs */
-.info {
-    border: 1px solid black;
-    width: 60%;
-    height: auto;
+/* Contact */
+.contact-section {
+    padding: 10px;
+}
+
+.contact-container {
     margin: 0px auto;
+    width: 55%;
+    padding: 20px;
 }
 
-.info form {
-    border: 1px solid red;
-    width: 70%;
-    margin: 2% auto;
+.contact-container h2 {
+    text-align: center;
+    color: beige;
 }
 
-.info input[type="text"] {
-    width: 80%;
-    margin: 10px 55px;
-    border: 2px solid black;
-    border-radius: 7px;
-    background: gray;
-    color: #fff;
+form {
+    padding: 20px;
+    background-color: #ACE1AF;
+    border-radius: 5px;
 }
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    /* font-family: Perpetua, Rockwell Extra Bold; */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.submit {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.terms a {
+    text-decoration: none;
+    color: black;
+}
+
+.terms:hover a {
+    text-decoration: underline;
+    color: red;
+}
+

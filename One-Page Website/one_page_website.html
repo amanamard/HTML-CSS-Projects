@@ -105,9 +105,9 @@
 			<!-- END GALLERY -->
 			
 			<!-- CONTACT -->
-			<section>
-				<div class="container">
-					<h1 id="contact">Contact</h1>
+			<section class="contact-section" id="contact">
+				<div class="contact-container">
+					<h1>Contact</h1>
 					<div class="info">
 						<h2><span>Experience the magic of Cameroon!</span>
 							<br>Contact us today!
@@ -115,15 +115,13 @@
 						
 						<div>
 							<form action="" method="post">
-								<input class="form-element" type="text" value="First Name"><br>
-								<input class="form-element" type="text" value="Last Name"><br>
-								<input class="form-element" type="text" value="Email Address"><br>
-								<input class="form-element" type="text" value="Phone Number"><br>
-								<div class="form-spacer">
-									<label class="terms">Terms and Conditions</label>
-								</div>
-								<div>
-									<input type="submit" value="Submit">
+								<input id="FirstName" type="text" name="FirstName" placeholder="First Name">
+								<input id="LastName" type="text" name="LastName" placeholder="Last Name">
+								<input id="Email" type="text" name="Email" placeholder="Email">
+								<input id="Message" type="text" name="Message" placeholder="Please write your message here">
+								<div class="submit">
+									<label class="terms"><a href="">Terms and Conditions</a></label>
+									<input type="submit" value="SUBMIT">
 								</div>
 							</form>
 						</div>
@@ -135,7 +133,7 @@
 		</main>
 		
 		<footer>
-			<p>www.africainminiature.cmr &nbsp;|&nbsp; &copy; 2025 Explore Cameroon.</p>
+			<p class="center">www.africainminiature.cmr &nbsp;|&nbsp; &copy; 2025 Explore Cameroon.</p>
 		</footer>
 		
 	</body>

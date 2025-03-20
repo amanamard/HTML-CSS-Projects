@@ -63,8 +63,6 @@ font-size: 20px;
 li a:hover {
 /*background-color:#005D47;*/
 color: red;
-font-weight: bold;
-cursor: pointer;
 }
 
 /* Logo */
@@ -107,7 +105,9 @@ main {
     border-radius: 8px;
     box-shadow: 2px 2px 10px 0 rgb(255, 0, 0, 0.5);
     width: 55%;
-    margin: 0px auto;
+    margin: 0% auto;
+
+    gap: 20px;
 }
 
 .card {
@@ -115,8 +115,10 @@ main {
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 30%;
-    margin: 13px;
+    margin: auto;
+    height: 320px;
     transition: transform 0.2s ease-in-out;
+    background-color: white;
 }
 
 .card-image {
@@ -136,6 +138,8 @@ main {
     background-color: white;
     position: relative;
     z-index: 1;
+
+    overflow: hidden;
 }
 /* End Gallery section 1 */
 

@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Cameroon | Africa in Miniature</title>
 		<link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">
+		<script src="./JS/one_page_website.js" defer></script>
 	</head>
 	<body>
 		
@@ -47,50 +48,97 @@
 										
 					<!-- PHOTO-CONTAINER 1 -->
 					<div class="card">
-						<img src="./Images/Thumb/thumbnail_1.png" alt="Image of Kribi beach" class="card-image">
-						<div class="card-description">
-							<h4><b>Kribi Beach</b></h4> 
-							<p>Relax on white sand beaches and visit Lobé waterfalls</P>
-						</div>
+						<img src="./Images/Thumb/thumbnail_1.png" style="width:100%" 
+						onclick="openModal(); currentSlide(1)" class="card-image cursor">
 					</div>
 					<!-- END PHOTO-CONTAINER 1 -->
 					
 					<!-- PHOTO-CONTAINER 2 -->
 					<div class="card">
-						<img src="./Images/Thumb/thumbnail_2.png" alt="Image of Mount Cameroon" class="card-image">
-						<div class="card-description">
-							<h4><b>Mount Cameroon</b></h4> 
-							<p>Highest peak in Central Africa, perfect for hiking</P>
-						</div>
+						<img src="./Images/Thumb/thumbnail_2.png" style="width:100%" 
+						onclick="openModal(); currentSlide(2)" class="card-image cursor">
 					</div>
 					<!-- END PHOTO-CONTAINER 2 -->
 					
 					<!-- PHOTO-CONTAINER 3 -->
 					<div class="card">
-						<img src="./Images/Thumb/thumbnail_3.png" alt="Image of Waza National Park" class="card-image">
-						<div class="card-description">
-							<h4><b>Waza National Park</b></h4> 
-							<p>Safari with elephants, lions, giraffes, and more.</P>
-						</div>
+						<img src="./Images/Thumb/thumbnail_3.png" style="width:100%" 
+						onclick="openModal(); currentSlide(3)" class="card-image cursor">
 					</div>
 					<!-- END PHOTO-CONTAINER 3 -->
 					
 					<!-- PHOTO-CONTAINER 4 -->
 					<div class="card">
-						<img src="./Images/Thumb/thumbnail_4.png" alt="Image of Limbe" class="card-image">
-						<div class="card-description">
-							<h4><b>Limbe</b></h4> 
-							<p>Discover black sand beaches and botanical gardens</P>
-						</div>
+						<img src="./Images/Thumb/thumbnail_4.png" style="width:100%" 
+						onclick="openModal(); currentSlide(4)" class="card-image cursor">
 					</div>
 					<!-- END PHOTO-CONTAINER 4 -->
 				
+				</div>
+
+				<!-- The Modal/Lightbox -->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+				
+						<div class="mySlides">
+							<div class="numbertext">1 / 4</div>
+							<img src="./Images/Thumb/thumbnail_1_wide.png" style="width:100%">
+						</div>
+					
+						<div class="mySlides">
+							<div class="numbertext">2 / 4</div>
+							<img src="./Images/Thumb/thumbnail_2_wide.png" style="width:100%">
+						</div>
+					
+						<div class="mySlides">
+							<div class="numbertext">3 / 4</div>
+							<img src="./Images/Thumb/thumbnail_3_wide.png" style="width:100%">
+						</div>
+					
+						<div class="mySlides">
+							<div class="numbertext">4 / 4</div>
+							<img src="./Images/Thumb/thumbnail_4_wide.png" style="width:100%">
+						</div>
+					
+						<!-- Next/previous controls -->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
+						<!-- Caption text -->
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+					
+						<!-- Thumbnail image controls -->
+						<div class="card">
+							<img class="demo" src="./Images/Thumb/thumbnail_1.png" 
+							style="width:100%" onclick="currentSlide(1)" alt="Kribi Beach">
+						</div>
+					
+						<div class="card">
+							<img class="demo" src="./Images/Thumb/thumbnail_2.png" 
+							style="width:100%" onclick="currentSlide(2)" alt="Mount Cameroon">
+						</div>
+					
+						<div class="card">
+							<img class="demo" src="./Images/Thumb/thumbnail_3.png" 
+							style="width:100%" onclick="currentSlide(3)" alt="Waza National Park">
+						</div>
+					
+						<div class="card">
+							<img class="demo" src="./Images/Thumb/thumbnail_4.png" 
+							style="width:100%" onclick="currentSlide(4)" alt="Limbe botanical gardens">
+						</div>
+					</div>
 				</div>
 					
 				<div class="gallery-section2">	
 					<div>
 						<h1>Culture and Traditions</h1>
-						<p class="center video">Cameroon has many ethnic groups, each with unique music, dances, and festivals. Popular foods include Ndolé and Achu.</p>
+						<p class="center video">Cameroon has many ethnic groups, 
+							each with unique music, dances, and festivals. 
+							Popular foods include Ndolé and Achu.</p>
 					</div>
 					
 					<!-- VIDEO -->
@@ -115,10 +163,14 @@
 						
 						<div>
 							<form action="#" method="post">
-								<input id="FirstName" type="text" name="FirstName" placeholder="First Name">
-								<input id="LastName" type="text" name="LastName" placeholder="Last Name">
-								<input id="Email" type="text" name="Email" placeholder="Email">
-								<input id="Message" type="text" name="Message" placeholder="Please write your message here">
+								<input id="FirstName" type="text" name="FirstName" 
+								placeholder="First Name">
+								<input id="LastName" type="text" name="LastName" 
+								placeholder="Last Name">
+								<input id="Email" type="text" name="Email" 
+								placeholder="Email">
+								<input id="Message" type="text" name="Message" 
+								placeholder="Please write your message here">
 								<div class="submit">
 									<label class="terms"><a href="">Terms and Conditions</a></label>
 									<input type="submit" value="SUBMIT">
